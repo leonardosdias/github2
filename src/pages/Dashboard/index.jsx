@@ -9,14 +9,14 @@ import {
   Title, Form, Repositories, Error,
 } from './styles';
 
-const Dashboard: React.FC = () => {
+const Dashboard = () => {
   const [username, setUsername] = useState('');
 
   const [inputError, setInputError] = useState('');
 
   const [repositories, setRepositories] = useState([]);
 
-  async function handleAddRepository(event: FormEvent<HTMLFormElement>): Promise<void> {
+  async function handleAddRepository(event) {
     event.preventDefault();
 
     if (!username) {
@@ -54,7 +54,7 @@ const Dashboard: React.FC = () => {
       {inputError && <Error>{inputError}</Error>}
 
       <Repositories>
-        {repositories.map((repository: any) => (
+        {repositories.map((repository) => (
           <Link
             key={repository.full_name}
             to={`/repository/${repository.full_name}`}

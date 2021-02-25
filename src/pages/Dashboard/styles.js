@@ -1,10 +1,6 @@
 import styled, { css } from 'styled-components';
 import { shade } from 'polished';
 
-interface FormProps {
-  hasError: boolean;
-}
-
 export const Title = styled.h1`
   font-size: 48px;
   color: #3a3a3a;
@@ -13,7 +9,7 @@ export const Title = styled.h1`
   margin-top: 80px;
 `;
 
-export const Form = styled.form<FormProps>`
+export const Form = styled.form`
   margin-top: 40px;
   max-width: 700px;
 
