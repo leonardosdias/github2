@@ -81,10 +81,6 @@ export const Repositories = styled.div`
       margin-top: 16px;
     }
 
-    &:hover {
-      transform: translateX(10px);
-    }
-
     img {
       width: 64px;
       height: 64px;

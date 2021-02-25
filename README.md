@@ -1,5 +1,5 @@
 ### Projeto
-Projeto desenvolvido para utilizar a api pública do GitHub, afim de listar projetos apartir de uma pesquisa por nome do autor/repositório.
+Projeto desenvolvido para teste de avaliação Vaga Dev - Hidoc.
 
 ### Tecnologias Utilizadas
 - ReactJS
@@ -9,4 +9,3 @@ Projeto desenvolvido para utilizar a api pública do GitHub, afim de listar proj
 - Axios
 - Styled Components
 
-##### Leonardo Dias, setembro de 2020.

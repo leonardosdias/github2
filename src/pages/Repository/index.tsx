@@ -1,11 +1,7 @@
-/* eslint-disable camelcase */
-// eslint-disable-next-line no-use-before-define
 import React, { useState, useEffect } from 'react';
 import { useRouteMatch, Link } from 'react-router-dom';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import api from '../../services/api';
-
-import logoImg from '../../assets/logo.svg';
 
 import { Header, RepositoryInfo, Issues } from './styles';
 
@@ -53,7 +49,6 @@ const Repository: React.FC = () => {
   return (
     <>
       <Header>
-        <img src={logoImg} alt="GitHub" />
         <Link to="/">
           <FiChevronLeft size={16} />
           Voltar
@@ -88,7 +83,6 @@ const Repository: React.FC = () => {
 
       <Issues>
         {issues.map((issue) => (
-          // eslint-disable-next-line react/jsx-no-target-blank
           <a key={issue.id} href={issue.html_url} target="_blank">
             <div>
               <strong>{issue.title}</strong>
